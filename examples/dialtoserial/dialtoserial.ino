@@ -10,9 +10,11 @@
 
 RotaryDialer dialer = RotaryDialer(PIN_READY, PIN_PULSE);
 
+
 void setup() {
 	Serial.begin(28800);
 	dialer.setup();
+  Serial.println("Done with setup!");
 }
 
 void loop() {
