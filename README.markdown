@@ -1,3 +1,5 @@
+This is my version of markfickett's code.  Essentially, all I've done is changed it to use internal pullups, and changed the debounce delay from 15ms to 40ms to better work with my dial.
+
 Rotary Dial
 ===========
 
