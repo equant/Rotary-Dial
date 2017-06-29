@@ -10,7 +10,8 @@
 
 // Require DEBOUNCE_DELAY milliseconds between state changes. This value is
 // noted in the class documentation.
-#define DEBOUNCE_DELAY	15
+//#define DEBOUNCE_DELAY	15
+#define DEBOUNCE_DELAY	40
 
 RotaryDialer::RotaryDialer(int readyPin, int pulsePin) :
 	pinReady(readyPin), pinPulse(pulsePin), hasCompletedNumber(false),
@@ -18,8 +19,8 @@ RotaryDialer::RotaryDialer(int readyPin, int pulsePin) :
 { }
 
 void RotaryDialer::setup() {
-	pinMode(pinReady, INPUT);
-	pinMode(pinPulse, INPUT);
+	pinMode(pinReady, INPUT_PULLUP);
+	pinMode(pinPulse, INPUT_PULLUP);
 	digitalWrite(pinReady, HIGH);
 	digitalWrite(pinPulse, HIGH);
 	lastStateChangeMillis = millis();
