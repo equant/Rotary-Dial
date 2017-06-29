@@ -16,12 +16,7 @@ On the back of the dial are two connections relevant for this implementation.  O
 
 The expected circuit is:
 
-	     Rotary Dial                              Arduino
-	                      /---------------------- readyPin
-	  /- ready switch (NO) -- pull-up resistor -- VCC
-	 /-- pulse switch (NC) -- pull-up resistor -/
-	 \                    \---------------------- pulsePin
-	  \------------------------------------------ GND
+	Connect ready and pulse lines from their pins to ground.
 
 The expected sequence is:
 
